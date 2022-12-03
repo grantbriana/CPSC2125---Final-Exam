@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>CPSC2125 Exams - Tip Calculator</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+
+
+<body>
+  <div class="grid-container">
+
+  <header class="headerText">
+    <h1>Tip Calculator</h1>
+  </header>
+  <header class="headerImg">
+    <img src="images/logo.jpeg"/>
+  </header>
+
+    <nav>
+      <ul>
+        <li><a href=index.html>Home</a></li>
+        <li><a href=page2.html>Form</a></li>
+        <li><a href="https://runestone.academy/ns/books/published/webfundamentals/index.html">Fundamentals of Web Programming</a></li>
+                <li><a href=page3.html>Tip Calculator</a></li>
+ 
+
+      </ul>
+    </nav>
+
+    <main>
+      
+              <label for="total">Food Total</label>
+        <input type="text" name="total" id = "tot" required>
+      <h3>Tip Amount </h3>
+<div class="slidecontainer">
+  <input type="range" min="1" max="100" value="50" class="slider" id="tipRange">
+</div>
+      <!--Slider control for tip amount-->
+      <!--Display Tip-->
+      <p id = "TipAmount"></p>     
+      <p id = "tip"></p>
+      <p id = "TotAmount"></p>
+      <button onclick = "calculate()">Calculate</button>
+            <button onclick =  "reset()">Reset</button>
+      
+    </main>
+
+    <footer>
+      <p>&copy</p>
+      <p>Briana Grant</p>
+      <p><a href="mailto:grant_briana@columbusstate.edu">Send E-mail</a></p>
+      <p>Last Updated:
+        <span id="lastUpdate"></span>
+      </p>
+    </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
